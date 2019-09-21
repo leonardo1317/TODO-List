@@ -1,0 +1,28 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Proyecto de RESTful API para la aplicación TODO List",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "tsc",
+    "start": "node build/src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/lfavio2/todo-list.git"
+  },
+  "author": "Leonardo Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/lfavio2/todo-list/issues"
+  },
+  "homepage": "https://gitlab.com/lfavio2/todo-list#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.138",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1"
+  }
+}
