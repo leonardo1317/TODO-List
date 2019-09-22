@@ -1,5 +1,9 @@
 import express from 'express';
+import account from './routes/account';
 const app = express();
-app.listen(3000,()=>{
-    console.log('Api rest corriendo en el puerto 3000');
+const port = process.env.PORT || 3000;
+//Routes
+app.use('/users',account);
+app.listen(port,()=>{
+    console.log(`Api rest corriendo en el puerto ${port}`);
 });
