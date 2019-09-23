@@ -14,9 +14,5 @@ class TaskService {
         task.creationDate = currentTime;
         postgreSqlService.saveTasks(task, res);
     }
-
-    public getTasks(req: Request, res: Response) {
-        postgreSqlService.getActivities(res);
-    }
 }
 export const taskService = new TaskService();
